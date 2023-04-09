@@ -6,7 +6,7 @@
 /*   By: ofadhel <ofadhel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/20 09:57:32 by ofadhel           #+#    #+#             */
-/*   Updated: 2023/04/09 19:25:27 by ofadhel          ###   ########.fr       */
+/*   Updated: 2023/04/09 19:40:08 by ofadhel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 void	stoc(int sig, siginfo_t *info, void *context)
 {
 	static int	bit;
-	static int word;
-	
+	static int	word;
+
 	(void)context;
 	if (sig == SIGUSR1)
 		word += 1 << bit;
