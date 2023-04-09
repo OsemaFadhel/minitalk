@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 NAMEC = client
-NAMES = serverc
+NAMES = server
 C_FILE =	client.c ft_printf.c ft_puthex.c ft_putnbrs.c ft_putchars.c
 S_FILE =	server.c ft_printf.c ft_puthex.c ft_putnbrs.c ft_putchars.c
 
