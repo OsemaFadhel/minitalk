@@ -18,7 +18,7 @@ S_FILE =	server.c ft_printf.c ft_puthex.c ft_putnbrs.c ft_putchars.c
 CC	= gcc
 CFLAGS	= -Wall -Werror -Wextra
 RM = rm -rf ../*
-all:	$(NAMEC) $(NAMES)
+all:	${RM} $(NAMEC) $(NAMES)
 
 $(NAMEC) : $(C_FILE)
 		$(CC) $(CFLAGS) -o $(NAMEC) $(C_FILE)
